@@ -103,6 +103,7 @@ const ProductModal = () => {
               checked: true,
             };
             product.variants[0].discount = {
+              text: "% Off",
               type: "% Off",
               value: 0,
               productId: selectedProduct.id ?? 0,
@@ -150,6 +151,7 @@ const ProductModal = () => {
 
           newVariants[newVariantIndex].discount = {
             value: 0,
+            text: "% Off",
             type: "% Off",
             productId: selectedProduct.product_id ?? 0,
           };
